@@ -13,13 +13,13 @@ TTL functionality is handled directly by Redis so no timestamps are stored and e
 ## Install
 
 ```shell
-npm install --save keyv @keyvjs/redis
+npm install --save @keyvjs/keyv @keyvjs/redis
 ```
 
 ## Usage
 
 ```js
-const Keyv = require('keyv');
+const Keyv = require('@keyvjs/keyv');
 
 const keyv = new Keyv('redis://user:pass@localhost:6379');
 keyv.on('error', handleConnectionError);
@@ -37,7 +37,7 @@ Or you can manually create a storage adapter instance and pass it to Keyv:
 
 ```js
 const KeyvRedis = require('@keyvjs/redis');
-const Keyv = require('keyv');
+const Keyv = require('@keyvjs/keyv');
 
 const keyvRedis = new KeyvRedis('redis://user:pass@localhost:6379');
 const keyv = new Keyv({ store: keyvRedis });
@@ -48,7 +48,7 @@ Or reuse a previous Redis instance:
 ```js
 const KeyvRedis = require('@keyvjs/redis');
 const Redis = require('ioredis');
-const Keyv = require('keyv');
+const Keyv = require('@keyvjs/keyv');
 
 const redis = new Redis('redis://user:pass@localhost:6379');
 const keyvRedis = new KeyvRedis(redis);
