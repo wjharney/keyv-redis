@@ -13,7 +13,7 @@ TTL functionality is handled directly by Redis so no timestamps are stored and e
 ## Install
 
 ```shell
-npm install --save keyv @keyv/redis
+npm install --save keyv @keyv/redis ioredis
 ```
 
 ## Usage
