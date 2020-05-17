@@ -48,9 +48,10 @@
     "nyc": "^14.1.1",
     "requirable": "^1.0.5",
     "this": "^1.1.0",
-    "xo": "^0.25.3"
+    "xo": "^0.25.3",
+    "ioredis": "4"
   },
   "peerDependencies": {
-    "ioredis": "~4.16.0"
+    "ioredis": "4"
   }
 }
