@@ -38,9 +38,6 @@
     "url": "https://github.com/lukechilds/keyv-redis/issues"
   },
   "homepage": "https://github.com/lukechilds/keyv-redis",
-  "dependencies": {
-    "ioredis": "~4.16.0"
-  },
   "devDependencies": {
     "ava": "^2.4.0",
     "coveralls": "^3.0.7",
@@ -52,5 +49,8 @@
     "requirable": "^1.0.5",
     "this": "^1.1.0",
     "xo": "^0.25.3"
+  },
+  "peerDependencies": {
+    "ioredis": "~4.16.0"
   }
 }
