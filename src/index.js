@@ -7,7 +7,7 @@ class KeyvRedis extends EventEmitter {
 	constructor(uri, opts) {
 		super();
 
-		if (uri instanceof Redis) {
+		if (uri instanceof Redis || uri instanceof Redis.Cluster) {
 			this.redis = uri;
 		} else {
 			opts = Object.assign({}, typeof uri === 'string' ? { uri } : uri, opts);
